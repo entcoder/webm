@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://fonts.cdnfonts.com/css/biling-mi-marathi" rel="stylesheet">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/biling-mi-marathi');
+</style>
+  <style>
+    body {
+      font-family: 'biling mi marathi';
+      background-color: #FFE5E5;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+  max-width: 1200px; /* Adjust the max-width according to your design */
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+ 
+.container h1{
+    text-align: center;
+}
+
+
+    .cards-container {
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr)); /* Increase minmax value */
+  gap: 20px;
+  
+}
+
+
+
+    .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; /* Add margin to create a gap between cards */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+    .card:hover {
+      transform: scale(1.03);
+      /* transition: smooth; */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+    .card h2{
+        font-size: 35px;
+    }
+    .card li{
+        font-size: 25px;
+    }
+    .exp{
+        font-size: 25px
+    }
+    h1{
+        font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>उपलब्ध सेवा</h1>
+
+    <div class="cards-container">
+      <div class="card">
+        <img src="../images/ins.png" alt="Service 1">
+        <div class="card-content">
+            <h2>सर्व प्रकारचे विमा</h2>
+      
+            <ul>
+              <li>आरोग्य विमा</li>
+              <li>जीवन विमा</li>
+              <li>वाहन विमा</li>
+            </ul>
+        </div>
+      </div>
+
+      
+
+      <div class="card">
+        <img src="../images/bank.jpg" alt="Service 3">
+        <div class="card-content">
+            <h2>बँकिंग सेवा</h2>
+            <ul>
+                
+               
+                    
+                    <li>क्रेडीट कार्ड</li>
+                    <li>पर्सनल लोन </li>
+                    <li>होम लोन </li>
+                
+                
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/tours.jpg" alt="Service 2">
+        <div class="card-content">
+            <h2>टूर्स आणि ट्रॅव्हल्स</h2>
+       
+
+            <ul>
+             <li>टूर पॅकेज (देश किंवा परदेशी)</li>
+             <li>तिकीट बुकिंग -
+               <ul class="nest">
+                 <li>ट्रॅव्हल्स</li>
+                 <li>रेल्वे</li>
+                 <li>विमान</li>
+               </ul>
+             </li>
+             
+           </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/os.png" alt="Service 3">
+        <div class="card-content">
+            <h2>इतर ऑनलाइन सेवा</h2>
+            <ul>
+                <li>पीक विमा </li>
+                <li>सोलार अर्ज </li>
+                <li>महा-डी. बी . टी  फॉर्म </li>
+                <li>सर्व शेतीविषयक योजना मार्गदर्शन  व अर्ज भरणा 
+                    
+                </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+
+
+  
+
+</body>
+</html>

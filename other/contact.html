@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+
+    <div class="contact-container" id="contact">
+        <h2>आमच्याशी संपर्क साधा</h2>
+        <form id="email-form">   
+            <label for="name">नाव:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">ईमेल:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="mobile">मोबाईल क्रमांक:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+      
+            <label for="query">संदेश:</label>
+            <textarea id="query" name="query" rows="4" required></textarea>
+      
+            <button type="button" onclick="sendEmail()">प्रस्तुत करणे</button>
+        </form>
+    </div>
+    
+    <script src="https://emailjs-com.s3.amazonaws.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init("user_your_emailjs_user_id");
+    
+      function sendEmail() {
+        const form = document.getElementById('email-form');
+        emailjs.sendForm('gmail', 'template_your_template_id', form)
+          .then(function(response) {
+            console.log('Email sent successfully:', response);
+            alert('Email sent successfully!');
+          }, function(error) {
+            console.log('Email sending failed:', error);
+            alert('Email sending failed!');
+          });
+      }
+    </script>
+    
+    
+</body>
+</html>

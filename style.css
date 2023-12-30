@@ -1,0 +1,413 @@
+body{
+
+    font-family: 'biling mi marathi', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    /* background-image: linear-gradient(to right,#a517ba,#5f1782); */
+    background-color: #FFE5E5;
+}
+navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a {
+    font-size: 30px;
+    color: black !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+ text-decoration: underline;
+ 
+
+}
+
+.fa{
+    color: black;
+}
+
+#banner{
+    /* background-image: linear-gradient(to right,#a517ba,#5f1782); */
+    background-color: #FFE5E5;
+    padding-top: 5%;
+}
+.promotitle {
+    color: rgb(18, 149, 224);
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden;    /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display an ellipsis (...) when content overflows */
+    font-size: 14px; /* Set the desired font size */
+  }
+  
+.promo-text{
+    color: black;
+    font-weight: 100;
+}
+
+#banner a{
+    color: #fff;
+    text-decoration: none;
+}
+.bottom-img{
+    width: 100%;
+}
+.s-head{
+    padding: 50px;
+    margin: 20px;
+    font-weight: 650;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+}
+.nav-item {
+    padding: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: translateZ(10px); /* Adjust the value for the z-direction movement on hover */
+}
+.navbar-brand img{
+    width: 600px;
+}
+.about{
+    padding-top: 50px;
+    font-size: 30px;
+    color: black !important;
+    font-weight: 700;
+}
+
+.con img{
+  
+    width: 120px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+
+    
+}
+.con-div{
+    text-align: center;
+}
+.con-div p{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+}
+.con-div h2{
+    padding-bottom: 20px;
+}
+
+
+
+
+@keyframes rotate3D {
+    0% { transform: perspective(400px) rotateX(0) rotateY(0) translateZ(100px); }
+    100% { transform: perspective(400px) rotateX(0) rotateY(0) translateZ(0); }
+}
+
+.promotitle {
+    font-size: 68px;
+    transform: perspective(400px) rotateX(0) rotateY(0) translateZ(100px);
+    transition: transform 0.3s ease-in-out;
+    animation: rotate3D 1s forwards; /* Adjust the duration and other properties as needed */
+}
+.promotitle:hover{
+
+    text-decoration: underline;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.promo-text{
+
+    font-size: 30px;
+}
+.web{
+    
+    width: 80px;
+}
+
+
+/* Style for each card */
+.con-div {
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 15px; /* Optional: Add rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 20px; /* Add padding to each card */
+    padding: 20px;
+}
+
+/* Hover effect - increase shadow on hover */
+.con-div:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+/* Style for images within each card */
+.con-div img {
+    width: 150px; /* Make the image fill the container */
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Optional: Add a border at the bottom of the image */
+}
+
+/* Style for the heading within each card */
+.con-div h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* Style for the paragraph within each card */
+.con-div p {
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.con-div h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.con-div ul{
+
+    font-size: 25px;
+    list-style-type: none;
+    padding: 10px;
+}
+.im{
+   
+    width: 10px;
+}
+#service{
+    padding-bottom: 0%;
+}
+.nest{
+    padding-left: 26px;
+}
+
+
+@media (max-width: 768px) {
+    .col-lg-6 {
+        width: 100%; /* Make the column full width on small screens */
+        margin-bottom: 20px; /* Optional: Add some space between the columns */
+    }
+
+    .col-lg-6 img {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .promotitle {
+        font-size: 36px; /* Adjust the font size for smaller screens */
+    }
+
+    .promo-text {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}
+
+
+
+.contact-container {
+    background-color: #F6D6D6; /* Light gray background color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    color: black; /* Dark gray text color */
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff; /* White background color for the form */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555; /* Dark gray text color for labels */
+    font-size: 22px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    background-color: #756AB6; /* Green button color */
+    color: #fff; /* White text color */
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded border */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button:hover {
+    background-color: #F6D6D6; /* Darker green on hover */
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 80px; /* Adjust the logo width as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff; /* White link color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #4caf50; /* Green color on hover */
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff; /* White social icon color */
+    font-size: 24px;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.footer-social a:hover {
+    color: #4caf50; /* Green color on hover */
+}
+
+.footer-text {
+    font-size: 15px;
+    opacity: 0.8;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+.service-partners {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partner-logos-container {
+    overflow: hidden;
+}
+
+.partner-logos {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveLeftToRight 7s linear infinite; /* Adjust the duration as needed */
+}
+
+.partner-logo {
+    display: inline-block;
+    margin: 0 20px; /* Adjust the margin between logos */
+    text-align: center; /* Center text */
+}
+
+.partner-logo img {
+    border-radius: 15px;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+.whatsapp-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff; /* Green background color */
+    color: black; /* White text color */
+}
+
+.whatsapp-logo {
+    width: 200px; /* Adjust the logo size as needed */
+    height: auto;
+    cursor: pointer;
+    border: 3px groove;
+    border-radius: 15px;
+    animation: blink 1s ease-in-out infinite; /* Blinking animation */
+}
+
+.whatsapp-caption {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
